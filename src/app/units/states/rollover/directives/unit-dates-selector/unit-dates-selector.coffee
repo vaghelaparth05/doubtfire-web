@@ -63,7 +63,7 @@ angular.module('doubtfire.units.states.rollover.directives.unit-dates-selector',
       else
         body = {
           start_date: $scope.saveData.startDate
-          end_date: $scope.saeData.endDate
+          end_date: $scope.saveData.endDate
         }
       $scope.unit.rolloverTo(body).subscribe({
         next: (response) ->

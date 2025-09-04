@@ -224,6 +224,7 @@ import {GradeService} from './common/services/grade.service';
 import {TaskScormCardComponent} from './projects/states/dashboard/directives/task-dashboard/directives/task-scorm-card/task-scorm-card.component';
 import { UnitStudentEnrolmentModalService } from './units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.service';
 import { PrivacyPolicy } from './config/privacy-policy/privacy-policy';
+import { UnitDatesSelectorComponent } from './units/states/rollover/directives/unit-dates-selector/unit-dates-selector';
 
 export const DoubtfireAngularJSModule = angular.module('doubtfire', [
   'doubtfire.config',
@@ -331,6 +332,13 @@ DoubtfireAngularJSModule.directive(
   'userBadge',
   downgradeComponent({component: UserBadgeComponent}),
 );
+
+DoubtfireAngularJSModule.directive(
+  'funitDateSelector',
+  downgradeComponent({component: UnitDatesSelectorComponent}),
+);
+
+
 DoubtfireAngularJSModule.directive(
   'fTaskSubmissionCard',
   downgradeComponent({component: TaskSubmissionCardComponent}),

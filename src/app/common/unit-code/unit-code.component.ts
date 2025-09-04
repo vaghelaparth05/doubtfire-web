@@ -57,7 +57,7 @@ export class UnitCodeComponent implements OnInit, OnDestroy {
   flip() {
     this.showState = 'out'; // Trigger animation out
     setTimeout(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.unitCodeParts.length;
+      this.currentIndex = (this.currentIndex + 1) % this.unitCodeParts?.length;
       this.showState = 'in'; // Trigger animation in after a delay
     }, 200); // Delay to match the animation duration
   }
